@@ -32,6 +32,8 @@ node_modules: package.json
 
 docs/cli: .bin/clidoc
 		clidoc .
+.PHONY: deps
+deps: node_modules .bin/*
 
 .PHONY: lint
 lint: .bin/golangci-lint
